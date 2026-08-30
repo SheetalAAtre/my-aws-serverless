@@ -60,8 +60,7 @@ dynamodb/
 ├── 03-get-item.sh : Get one user by ID
 ├── 04-update-item.sh : Update name and level
 ├── 05-delete-item.sh
-├── 06-scan-table.sh : Get all users
-└── 07-delete-table.sh : For cleanup after completing the assignment
+└── 06-scan-table.sh : Get all users
 ```
 
 2. Create Lambda functions for DynamoDB CRUD
@@ -90,7 +89,7 @@ Folder Structure :
 ```text
 api-gateway/
 │
-└── 01-create-api.sh : This is the actual CRUD Lambda.
+└── 01-create-api-gateway.sh : This is the actual CRUD Lambda.
 ```
 
 4. Postman collection 
@@ -144,10 +143,14 @@ Well-Architected pillars...
 
 <details>
 <summary> Cleanup Steps</summary>
-Cleaning up the resources created for this assignment.
-* To delete the table, from DynamoDB console, select the table "lambda-apigateway", then on top right , click "Actions", then "Delete table"
-* To delete the Lambda, from the Lambda console, select lambda "LambdaFunctionOverHttps", click "Actions", then click Delete
-* To delete the API we created, in API gateway console, under APIs, select "DynamoDBOperations" API, click "Delete"
+For cleanup after completing the assignment
 
+```text
+dynamodb/
+└── 07-delete-table.sh :
+api-gateway/
+└── 02-delete-api-gateway.sh : This is the actual CRUD Lambda.
+
+```
 
 </details>

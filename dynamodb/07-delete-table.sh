@@ -9,4 +9,10 @@ aws dynamodb delete-table \
   --table-name "$TABLE_NAME" \
   --region "$REGION"
 
-echo "Delete request submitted."
+echo "Waiting for table deletion..."
+
+aws dynamodb wait table-not-exists \
+  --table-name "$TABLE_NAME" \
+  --region "$REGION"
+
+echo "DynamoDB table '$TABLE_NAME' deleted."
