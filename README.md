@@ -1,6 +1,4 @@
-# my-aws-serverless
-
-# AWS Serverless CRUD
+# AWS Serverless CRUD - AWS CLI console based approach
 
 ## Architecture
 
