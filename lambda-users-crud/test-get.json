@@ -1,0 +1,10 @@
+{
+  "requestContext": {
+    "http": {
+      "method": "GET"
+    }
+  },
+  "pathParameters": {
+    "id": "101"
+  }
+}
