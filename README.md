@@ -118,6 +118,8 @@ Expected Flow :
 * SLO: 95% of valid CRUD requests should complete within 500 ms.
 * Infra choice decision: Memory >> Duration >> P95 Latency >> SLO >> Cost >> Best Cost + Performance configuration
 * Note: Don't automatically choose 128 MB because it is cheapest or 1536 MB because it is fastest. Choose the lowest-cost configuration that comfortably meets your SLO.
+```text
+
 | Metric | Description | 128 MB | 256 MB | 512 MB | 1024 MB | 1536 MB |
 |---|---|---:|---:|---:|---:|---:|
 | **Memory** | Lambda memory configuration being tested | 128 MB | 256 MB | 512 MB | 1024 MB | 1536 MB |
@@ -128,6 +130,7 @@ Expected Flow :
 | **Cost / 1K Requests** | Estimated Lambda compute cost | — | — | — | — | — |
 | **SLO Met?** | Whether your latency/reliability target is achieved(Y/N) | — | — | — | — | — |
 | **Result** | Overall performance/cost assessment | Slow / Low cost | — | Potential sweet spot | Faster / Higher cost | Fastest / Costlier |
+
 
 
 </details>
