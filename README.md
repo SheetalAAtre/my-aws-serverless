@@ -143,14 +143,13 @@ Well-Architected pillars...
 
 <details>
 <summary> Cleanup Steps</summary>
-For cleanup after completing the assignment
+* For cleanup after completing the assignment run cleanup-all.sh to call the scripts in  order. 
 
-```text
-dynamodb/
-└── 07-delete-table.sh :
-api-gateway/
-└── 02-delete-api-gateway.sh : This is the actual CRUD Lambda.
-
-```
+* It deletes all below resources : 
+ 1.  API Gateway
+ 2.  Lambda permission
+ 3. Lambda function
+ 4. IAM role/policy
+ 5. DynamoDB table
 
 </details>
