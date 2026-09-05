@@ -256,7 +256,7 @@ Cleaning up Resources
 </details>
 
 <details>
-<summary> Creation Steps</summary>
+<summary> Creation Steps From AWS CLI </summary>
 1. Create DynamoDb table and insert sample data
 
 * PAY_PER_REQUEST chosen for this hands-on because dont need to provision DynamoDB capacity in advance.
