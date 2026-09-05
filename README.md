@@ -1,23 +1,28 @@
 # AWS Serverless CRUD - AWS CLI and AWS console based approach
 
 ## Architecture
-I recently built and tested an AWS Serverless CRUD microservice on AWS using:
-Postman → API Gateway → Lambda → DynamoDB → CloudWatch
-I implemented POST, GET, PUT and DELETE APIs and tested the complete flow through Postman.
-Some of my takeaways:
-•	Serverless did not remove architecture, it shifted the focus from infrastructure management to API design, security, scalability, observability and cost. 
-•	Compare the Lambda memory, execution time, end-to-end latency and cost – NOT to assume more memory or less memory is better. 
-•	Performance and cost are connected - the cheapest configuration may not always the most cost-effective if it increases execution time or impacts the SLO. 
-•	Plan ahead for failure fallback early during development - retries, timeouts, idempotency, error handling and monitoring need to be designed upfront, not added after production failures. 
-•	Security is part of development — IAM least privilege, encryption, HTTPS, API authorization and auditability should be built into the service rather than treated as a separate security phase. 
-•	Observability is part of the architecture — logs and metrics should help answer what failed, where it failed, why it failed and what is the cost. 
- Code + step-by-step setup + Postman collection: https://github.com/SheetalAAtre/my-aws-serverless/blob/main/README.md 
- 
+* I recently built and tested an AWS Serverless CRUD microservice on AWS using:
+**Postman → API Gateway → Lambda → DynamoDB → CloudWatch**
+* I implemented POST, GET, PUT and DELETE APIs and tested the complete flow through Postman.
+
+**  Some of my takeaways:**
+* Serverless did not remove architecture, it shifted the focus from infrastructure management to API design, security, scalability, observability and cost. 
+*	Compare the Lambda memory, execution time, end-to-end latency and cost – NOT to assume more memory or less memory is better. 
+*	Performance and cost are connected - the cheapest configuration may not always the most cost-effective if it increases execution time or impacts the SLO. 
+*	Plan ahead for failure fallback early during development - retries, timeouts, idempotency, error handling and monitoring need to be designed upfront, not added after production failures. 
+*	Security is part of development — IAM least privilege, encryption, HTTPS, API authorization and auditability should be built into the service rather than treated as a separate security phase. 
+* Observability is part of the architecture — logs and metrics should help answer what failed, where it failed, why it failed and what is the cost. 
+
+* Code + step-by-step setup + Postman collection:
+```
+  https://github.com/SheetalAAtre/my-aws-serverless/blob/main/README.md 
+ ```
+
 <img width="868" height="408" alt="basic serverless microservice " src="https://github.com/user-attachments/assets/c67b4892-797e-49c4-9ba9-3ead809d9d9b" />
 
 <details>
   <summary>
-    Steps From AWS Cloud Console 
+    Create Steps From AWS Cloud Console 
   </summary>
   
 Create Custom Policy for least privilege
