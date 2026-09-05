@@ -1,4 +1,4 @@
-# AWS Serverless CRUD - AWS CLI console based approach
+# AWS Serverless CRUD - AWS CLI and AWS console based approach
 
 ## Architecture
 
